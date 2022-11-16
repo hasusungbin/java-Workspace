@@ -27,7 +27,7 @@ public class A_Array {
 		 * 변수로 이용하여 각각의 데이터를 보관하고자 할때 -> 각각의 변수를 만들어서 따로관리해야함.
 		 * 
 		 * int num1 = 0;
-		 * int num2= 1;
+		 * int num2 = 1;
 		 * int num3 = 2;
 		 * int num4 = 3;
 		 * int num5 = 4;
