@@ -13,11 +13,11 @@ public class Run {
 		
 		
 		Circle cc = new Circle();
-		cc.getAreaOfCircle();
-		cc.getSizeOfCircle();
-		cc.incrementRadius();
-		cc.getAreaOfCircle();
-		cc.getSizeOfCircle();
+//		cc.getAreaOfCircle();
+//		cc.getSizeOfCircle();
+//		cc.incrementRadius();
+//		cc.getAreaOfCircle();
+//		cc.getSizeOfCircle();
 		
 		
 	}
