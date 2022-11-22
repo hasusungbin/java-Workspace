@@ -3,18 +3,16 @@ package com.kh.hw.shape.controller;
 import com.kh.hw.shape.model.vo.Shape;
 
 public class SquareController {
-	Shape s = new Shape();
+	private Shape s = new Shape();
 		
 	public double calcPerimeter(double height, double width) {
-		s.setHeight(height);
-		s.setWidth(width);
+		s = new Shape(4 , height , width);
 		return (height * 2 + width * 2);
 		
 	}
 	
 	public double calcArea(double height, double width) {
-		s.setHeight(height);
-		s.setWidth(width);
+		s = new Shape(4 , height , width);
 		return (height *  width);
 	}
 	
@@ -23,7 +21,6 @@ public class SquareController {
 	}
 	
 	public String print() {
-		
-		return s.information();
+		return "사각형"+s.information();
 	}
 }

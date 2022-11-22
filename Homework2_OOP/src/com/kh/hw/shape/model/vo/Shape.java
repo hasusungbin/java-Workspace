@@ -32,23 +32,23 @@ public class Shape {
 		this.color = color;
 	}
 	
-	public int type() {
+	public int getType() {
 		return type;
 	}
 	
-	public double height() {
+	public double getHeight() {
 		return height;
 	}
 	
-	public double width() {
+	public double getWidth() {
 		return width;
 	}
 	
-	public String color() {
+	public String getColor() {
 		return color;
 	}
 	
 	public String information() {
-		
+		return height+" "+width+" "+color;
 	}
 }
