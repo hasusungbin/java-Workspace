@@ -39,11 +39,27 @@ public class OpjectArrayRun {
 		System.out.print("책의 제목을 입력하세요 : ");
 		String searchTitle = sc.nextLine();
 		
+//		for(int i = 0; i < arr.length; i++) {
+//			if(arr[i].getTitle().equals(searchTitle));{
+//				System.out.println(arr[i].getPrice());
+//			}
+//		}
+		
+		int count = 0;
+		
 		for(int i = 0; i < arr.length; i++) {
 			if(arr[i].getTitle().equals(searchTitle));{
-				System.out.println(arr[i].getPrice());
+				count++;
+				System.out.println("책의 가격은 : "+ arr[i].getPrice());
+				break; // 책의 제목이 중복되지 않은 이상 break문을 걸어주게 되면 찾고자하는 책을 찾고나서 더 이상 반복문을 실행 시키지 않음.
 			}
 		}
+		
+		if(count == 0) {
+			System.out.println("검색된 도서가 없습니다.");
+		}
 	}
+	
+	// 만약 일치하는 도서를 찾지 못한경우 "검색된 도서가 없습니다." 출력
 
 }
