@@ -5,7 +5,7 @@ public class Member {
 	private String id;
 	private String name;
 	private String password;
-	private String eamil;
+	private String email;
 	private char gender;
 	private int age;
 	
@@ -16,12 +16,12 @@ public class Member {
 	}
 
 
-	public Member(String id, String name, String password, String eamil, char gender, int age) {
+	public Member(String id, String name, String password, String email, char gender, int age) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.password = password;
-		this.eamil = eamil;
+		this.email = email;
 		this.gender = gender;
 		this.age = age;
 	}
@@ -57,13 +57,13 @@ public class Member {
 	}
 
 
-	public String getEamil() {
-		return eamil;
+	public String getEmail() {
+		return email;
 	}
 
 
-	public void setEamil(String eamil) {
-		this.eamil = eamil;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 
@@ -87,7 +87,7 @@ public class Member {
 	}
 	
 	public String information() {
-		return id+ name + password + eamil + gender + age;
+		return id+ name + password + email + gender + age;
 	}
 
 }
