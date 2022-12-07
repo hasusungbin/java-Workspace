@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import com.kh.practice.list.music.model.compare.AscTitle;
 import com.kh.practice.list.music.model.vo.Music;
 
 public class MusicController {
@@ -74,6 +75,7 @@ public class MusicController {
 	}
 	
 	public int ascTitle() {
+		// 리스트 곡 
 		Collection.sort(list);
 		return 1;
 	}
